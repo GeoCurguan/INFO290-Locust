@@ -20,13 +20,13 @@ $ pip install -r requirements.txt
 
 ## Ejecución de pruebas
 1.- Abrir dos terminales en el proyecto <br>
-2.- Ejecutar la API
+2.- En una terminal ejecutar la API
 ```
 $ uvicorn main:app
 ```
-3.- Ejecutar Locust
+3.- En la otra terminal ejecutar Locust
 ```
-locust -f locustfile.py --host http://127.0.0.1:8000
+$ locust -f locustfile.py --host http://127.0.0.1:8000
 ```
 
 4.- Abrir el navegador e ir al dashboard de Locust (por defecto: http://localhost:8089/)
